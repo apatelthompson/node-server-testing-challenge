@@ -6,6 +6,7 @@ exports.up = function(knex) {
       .unique()
       .notNullable();
     tbl.text("instructions").notNullable();
+    tbl.string("subject").notNullable();
   });
 };
 
